@@ -31,7 +31,7 @@ def index():
             B = float(request.form['B'])
             LSTAT = float(request.form['LSTAT'])
 
-            model_filename = 'linear_reg_model.pickle'
+            model_filename = 'Linear_reg_model.pickle'
             scalar_filename = 'StandardScaler.sav'
             loaded_model = pickle.load(open(model_filename, 'rb')) # loading the model file from the storage
             loaded_scalar = pickle.load(open(scalar_filename, 'rb'))
